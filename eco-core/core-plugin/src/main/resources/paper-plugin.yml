@@ -1,0 +1,46 @@
+name: "eco"
+version: ${projectVersion}
+main: com.willfp.eco.internal.spigot.EcoImpl
+api-version: 1.21.8
+authors: [ Auxilor ]
+website: willfp.com
+load: STARTUP
+
+dependencies:
+  server:
+    ShopGUIPlus:
+      load: AFTER
+      required: false
+      join-classpath: true
+    DeluxeMenus:
+      load: AFTER
+      required: false
+      join-classpath: true
+    PlaceholderAPI:
+      load: AFTER
+      required: false
+      join-classpath: true
+    Nexo:
+      load: AFTER
+      required: false
+      join-classpath: false
+    Vault:
+      load: AFTER
+      required: false
+      join-classpath: true
+    CombatLogX:
+      load: AFTER
+      required: false
+      join-classpath: true
+    SuperiorSkyblock2:
+      load: AFTER
+      required: false
+      join-classpath: true
+    MythicMobs:
+      load: AFTER
+      required: false
+      join-classpath: true
+    FancyHolograms:
+      load: AFTER
+      required: false
+      join-classpath: true

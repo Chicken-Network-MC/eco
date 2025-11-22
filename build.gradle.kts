@@ -196,7 +196,17 @@ allprojects {
 }
 
 tasks {
+    jar {
+        manifest {
+            attributes["paperweight-mappings-namespace"] = "spigot"
+        }
+    }
+
     shadowJar {
+        manifest {
+            attributes["paperweight-mappings-namespace"] = "spigot"
+        }
+
         relocate("org.bstats", "com.willfp.eco.libs.bstats")
         relocate("redempt.crunch", "com.willfp.eco.libs.crunch")
         relocate("org.apache.commons.lang3", "com.willfp.eco.libs.lang3")

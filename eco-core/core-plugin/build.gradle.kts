@@ -73,7 +73,17 @@ dependencies {
 }
 
 tasks {
+    jar {
+        manifest {
+            attributes["paperweight-mappings-namespace"] = "spigot"
+        }
+    }
+
     shadowJar {
+        manifest {
+            attributes["paperweight-mappings-namespace"] = "spigot"
+        }
+
         minimize {
             exclude(dependency("org.jetbrains.exposed:.*:.*"))
             exclude(dependency("com.willfp:ModelEngineBridge:.*"))
